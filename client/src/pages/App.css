@@ -1,0 +1,119 @@
+body::-webkit-scrollbar {
+    display: none;
+}
+body{
+    transition: all 0.2s;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+
+.tasks-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap ;
+
+    gap: 10px;
+    margin: 0;
+    padding: 0;
+}
+
+#inputtask{
+    width: 360px;
+    height: 200px;
+    border: none;
+    background-color: rgba(50, 50, 50, 0.737);
+    box-shadow: 1px 1px 8px aqua;
+    border-radius: 5px;
+    color: white;
+    outline: none;
+}
+#subject{
+    border: none;
+    background-color: rgba(50, 50, 50, 0.737);
+    box-shadow: 1px 1px 8px aqua;
+    border-radius: 5px;
+    color: white;
+    text-align: center;
+    outline: none;
+    color: aqua;
+    height: 25px;
+}
+.input{
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+.plus{
+    right: 30px;
+    bottom: 30px;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: rgb(98, 229, 247);
+    border-radius: 50%;
+    border: none;
+    z-index: 2;
+    font-size: 50px;
+    transition: all 0.2s;
+}
+.addtask{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+    width: 80px;
+    height: 80px;
+    color: white;
+    background-color: rgb(98, 229, 247);
+    box-shadow: 1px 1px 8px rgb(103, 255, 202);
+    border-radius: 40px;
+    border: none;
+    z-index: 2;
+    font-size: 50px;
+    transition: all 0.2s;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.addtask:hover{
+    width: 200px;
+}
+
+.addtask label{
+    font-size: 20px;
+    position: absolute;
+    color: black;
+    width: 100px;
+    margin-top: 25px;
+}
+
+#btn{
+    color: white;
+    background-color: rgb(98, 229, 247);
+    box-shadow: 1px 1px 8px rgb(103, 255, 202);
+    border: none;
+    border-radius: 5px;
+}
+
+
+
+.edit-container{
+    position: relative;
+}
+a{
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+}
+@media screen and (max-width: 1000px){
+    .tasks-container{
+        align-items: center;
+        justify-content: center;
+        width: 100wh;
+    }   
+}
